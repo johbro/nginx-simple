@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhel8/nginx-114
+FROM centos/nginx-112-centos7
 
 MAINTAINER "John Browning" "johnb@redhat.com"
 
@@ -6,4 +6,4 @@ COPY index.html /opt/app-root/src/index.html
 
 RUN echo '----BUILDING HELLO----'
 
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]

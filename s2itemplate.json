@@ -4,8 +4,9 @@
   "metadata": {
     "name": "testapp",
     "annotations": {
-      "openshift.io/display-name": "Test html app running in nginx",
-      "description": "Simple html file running in NGINX",
+      "openshift.io/display-name": "Nginx HTTP server and a reverse proxy",
+      "description": "An example Nginx HTTP server and a reverse proxy (nginx) application that serves static content. For more information about using this template, including OpenShift considerations, see https://github.com/johbro/nginx-simple/blob/master/README.md.",
+      "tags": "quickstart,nginx",
       "iconClass": "icon-nginx",
       "openshift.io/long-description": "This template defines resources needed to develop a static application served by Nginx HTTP server and a reverse proxy (nginx), including a build configuration and application deployment configuration.",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
@@ -92,7 +93,7 @@
             "from": {
               "kind": "ImageStreamTag",
               "namespace": "${NAMESPACE}",
-              "name": "nginx-114:${NGINX_VERSION}"
+              "name": "nginx:${NGINX_VERSION}"
             }
           }
         },
@@ -225,14 +226,14 @@
       "displayName": "Namespace",
       "description": "The OpenShift Namespace where the ImageStream resides.",
       "required": true,
-      "value": "container-demo"
+      "value": "openshift"
     },
     {
       "name": "NGINX_VERSION",
       "displayName": "NGINX Version",
-      "description": "Version of NGINX image to be used (1.14 by default).",
+      "description": "Version of NGINX image to be used (1.12 by default).",
       "required": true,
-      "value": "latest"
+      "value": "1.12"
     },
     {
       "name": "MEMORY_LIMIT",
