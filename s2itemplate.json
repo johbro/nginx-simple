@@ -232,7 +232,7 @@
       "displayName": "NGINX Version",
       "description": "Version of NGINX image to be used (1.14 by default).",
       "required": true,
-      "value": "1.14"
+      "value": "latest"
     },
     {
       "name": "MEMORY_LIMIT",
