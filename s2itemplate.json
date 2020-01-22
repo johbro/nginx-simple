@@ -46,7 +46,7 @@
         }
       },
       "spec": {
-        "host": "${NAME}",
+        "host": "${APPLICATION_DOMAIN}",
         "to": {
           "kind": "Service",
           "name": "${NAME}"
