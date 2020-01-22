@@ -6,7 +6,7 @@
     "annotations": {
       "openshift.io/display-name": "A simple webapp",
       "iconClass": "icon-nginx",
-      "openshift.io/documentation-url": "https://github.com/johbro/nginx-simple",
+      "openshift.io/documentation-url": "https://github.com/johbro/nginx-simple"
     }
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/johbro/nginx-simple/blob/master/README.md.",
