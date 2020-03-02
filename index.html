@@ -12,12 +12,9 @@
 	<p class="title">OpenShift</p>
 	<h1>Hello!</h1>
 	<p>This page is served from container host: </p>
-	<button onclick="getHost()">Get Hostname</button>
 	<script>
-		function getHost() {
 			var hostname = location.hostname;
-			document.getElementById("hostname").innerHTML = hostname;
-		}
+			document.writeln = hostname;
 	</script>
 	<p>Which is running on Red Hat OpenShift 4.3! </p>
         <p>Cluster pictured here:</p>
